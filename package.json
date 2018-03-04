@@ -1,0 +1,24 @@
+{
+  "name": "writing-sprint-api",
+  "version": "1.0.0",
+  "description": "Backend API for a writing sprint timer mobile app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cecilydowns/writing-sprint-api.git"
+  },
+  "author": "Cecily",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cecilydowns/writing-sprint-api/issues"
+  },
+  "homepage": "https://github.com/cecilydowns/writing-sprint-api#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.8"
+  }
+}
