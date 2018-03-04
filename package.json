@@ -18,7 +18,15 @@
   "homepage": "https://github.com/cecilydowns/writing-sprint-api#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
+    "connect-mongo": "^2.0.1",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^5.0.1",
+    "es6-promisify": "^6.0.0",
     "express": "^4.16.2",
-    "mongoose": "^5.0.8"
+    "express-session": "^1.15.6",
+    "express-validator": "^5.0.3",
+    "mongoose": "^5.0.8",
+    "passport": "^0.4.0",
+    "pug": "^2.0.0-rc.4"
   }
 }
