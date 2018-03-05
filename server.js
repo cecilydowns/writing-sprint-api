@@ -16,6 +16,9 @@ process.on('unhandledRejection', (reason, p) => {
 });
 
 
+require('./models/Sprint')
+require('./models/User')
+
 const app = require('./app');
 
 app.set('port', process.env.PORT || 3000);
