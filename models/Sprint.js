@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+mongoose.Promise = global.Promise;
 
 const sprintSchema = new mongoose.Schema({
     length: Number,
