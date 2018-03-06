@@ -4,6 +4,11 @@ mongoose.Promise = global.Promise;
 const sprintSchema = new mongoose.Schema({
     length: Number,
     words: Number,
+    user: {
+        type: mongoose.Schema.ObjectId,
+        ref: 'User',
+        required: 'Author required'
+    },
     date: {
         type: Date,
         default: Date.now
