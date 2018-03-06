@@ -7,12 +7,13 @@ exports.homePage = (req, res) => {
 };
   
 exports.createSprint = async (req, res) => {
-    
-    const sprint = await (new Sprint(req.body)).save()
-    res.json(req.body)
+    req.body.user = req.user._id
+    const newSprint = new Sprint(req.body)    
+    await newSprint.save()
+    res.json({ message: "it worked"})
 }
 
 exports.getSprints = async (req, res) => {
-    const sprints = await Sprint.find()
+    const sprints = await Sprint.find( { 'user': req.user._id })
     res.json(sprints)
 }
