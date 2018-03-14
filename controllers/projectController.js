@@ -3,7 +3,7 @@ const Project = mongoose.model('Project')
   
 exports.createProject = async (req, res) => {
     req.body.user = req.user._id
-    const newProject = new Sprint(req.body)    
+    const newProject = new Project(req.body)    
     await newProject.save()
     res.json({ message: "it worked"})
 }
